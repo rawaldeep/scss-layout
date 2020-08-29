@@ -1,0 +1,85 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/styles/style.css">
+    <!-- <link rel="stylesheet/scss" type="text/css" href="./assets/styles/scss/style.scss"> -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/sass.js/0.6.3/sass.min.js"></script>
+    <script>
+      (async () => {
+        const compiled = (await Promise.all(
+          [...document.querySelectorAll("link")]
+            .filter(l => l.rel === 'stylesheet/scss')
+            .map(async l => {
+              url = l.href;
+              const code = await (await fetch(url)).text();
+              const basename = url.substring(url.lastIndexOf("/")+1);
+              Sass.writeFile(basename, code);
+              return Sass.compile(`@import "${basename}"; `);
+            })
+        )).join("\n");
+        document.head.innerHTML += `<style>${compiled}</style>`;
+      })();
+    </script> -->
+    <title>Great Shoes inc.</title>
+</head>
+<body>
+    <header class="hero">
+        <div class="container spacing">
+            <h1 class="primary-title">
+                Amazing shoes at an amazing Price
+            </h1>
+            <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam id dicta quas, in nisi aliquam! Quae nostrum similique soluta quibusdam sequi!
+            </p>
+            <a href="#" class="btn"> See what we have</a>
+        </div>
+    </header>
+    <main>
+        <section class="featured">
+            <div class="container">
+                <h2 class="section-title">
+                    Featured Products
+                </h2>
+                <div class="split">
+                    <a href="#" class="featured__items">
+                        <img src="./assets/img/shoe-1.png" alt="" class="featured__img">
+                        <p class="featured__details"><span class="price">€99</span>Shoe name</p>
+                    </a>
+                    <a href="#" class="featured__items">
+                        <img src="./assets/img/shoe-2.png" alt="" class="featured__img">
+                        <p class="featured__details"><span class="price">€99</span>Shoe name</p>
+                    </a>
+                    <a href="#" class="featured__items">
+                        <img src="./assets/img/shoe-3.png" alt="" class="featured__img">
+                        <p class="featured__details"><span class="price">€99</span>Shoe name</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="our-products">
+            <div class="container">
+                <h2 class="section-title">Our products</h2>
+                <article class="product shoe-red spacing">
+                    <img src="./assets/img/shoe-1.png" alt="" class="product__image">
+                    <h3 class="product__title">A really nice shoe</h3>
+                    <p class="product__discription">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur ad nam vitae eos nulla sapiente!</p>
+                    <a href="#" class="btn">Buy now</a>
+                </article>
+                <article class="product shoe-white shoe-left spacing">
+                    <img src="./assets/img/shoe-2.png" alt="" class="product__image">
+                    <h3 class="product__title">A really nice shoe</h3>
+                    <p class="product__discription">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur ad nam vitae eos nulla sapiente!</p>
+                    <a href="#" class="btn">Buy now</a>
+                </article>
+                <article class="product shoe-blue spacing">
+                    <img src="./assets/img/shoe-3.png" alt="" class="product__image">
+                    <h3 class="product__title">A really nice shoe</h3>
+                    <p class="product__discription">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur ad nam vitae eos nulla sapiente!</p>
+                    <a href="#" class="btn">Buy now</a>
+                </article>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
